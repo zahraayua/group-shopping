@@ -21,7 +21,7 @@
 
 {{-- ================= MENU FITUR GROUP ================= --}}
 
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
 
     <a href="{{ route('shopping-lists.create',['group'=>$group->id]) }}"
        class="bg-white rounded-xl shadow border border-slate-200 p-5 text-center hover:shadow-lg transition">
@@ -41,17 +41,6 @@
 
         <div class="font-semibold text-slate-700">
             Upload Nota
-        </div>
-
-    </a>
-
-    <a href="{{ route('shopping-items.assign',$group->id) }}"
-       class="bg-white rounded-xl shadow border border-slate-200 p-5 text-center hover:shadow-lg transition">
-
-        <div class="text-3xl mb-2">👤</div>
-
-        <div class="font-semibold text-slate-700">
-            Assign Owner
         </div>
 
     </a>
@@ -335,7 +324,7 @@
 
 
             <button
-            class="bg-indigo-600 text-white text-xs px-4 py-2 rounded-lg hover:bg-indigo-700">
+            class="bg-indigo-800 text-white text-xs px-4 py-2 rounded-lg hover:bg-indigo-900">
 
                 Klaim Barang
 

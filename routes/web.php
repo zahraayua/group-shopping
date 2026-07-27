@@ -105,17 +105,6 @@ Route::middleware('auth')->group(function () {
         [ReceiptController::class, 'destroy']
     )->name('receipts.destroy');
 
-        // Assign Owner (Split Bill)
-    Route::get(
-        '/groups/{group}/assign-items',
-        [ShoppingItemUserController::class, 'edit']
-    )->name('shopping-items.assign');
-
-    Route::post(
-        '/groups/{group}/assign-items',
-        [ShoppingItemUserController::class, 'update']
-    )->name('shopping-items.update');
-
     // Split Bill
     Route::get(
         '/groups/{group}/split-bill',
