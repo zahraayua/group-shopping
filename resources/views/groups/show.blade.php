@@ -93,7 +93,7 @@
 
         @if($member->pivot->role == 'admin')
             <span class="text-[10px] bg-slate-200 text-slate-600 px-2 py-0.5 rounded-md">
-                Admin
+                Owner
             </span>
         @else
             <span class="text-[10px] bg-blue-100 text-blue-600 px-2 py-0.5 rounded-md">

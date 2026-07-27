@@ -23,6 +23,9 @@ return new class extends Migration
               ->constrained()
               ->onDelete('cascade');
 
+        $table->enum('role', ['admin', 'member'])
+          ->default('member');
+
         $table->timestamps();
     });
 }
